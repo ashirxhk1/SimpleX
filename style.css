@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    background-color: #21A5D5;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info{
+    display: flex;
+    gap: 3rem;
+}
+.email{
+    display: flex;
+    gap: 0.7rem;
+}
+.address{
+    display: flex;
+    gap: 0.7rem;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    color: rgba(178, 196, 202, 0.8);
+}
+.info p, .address p{
+color: white;
+}
+.nav-parent{
+    box-shadow: 0px 1px 20px 0.3px grey;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 0.8rem;
+    font-weight: 600;
+}
+
+.contact-btn button{
+    background-color: #21A5D5;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    font-weight: bolder;
+}
+.bi-list{
+    display: none;
+}
+
+.contact-btn button:hover{
+    background-color: black;
+}
+
+@media only screen and (max-width:800px){
+    header{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .info{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    .bi-list{
+        display: flex;
+    }
+    nav ul{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+}
